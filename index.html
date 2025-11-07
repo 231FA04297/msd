@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CURRY AND CULTURE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <span class="site-title">CURRY AND CULTURE</span>
+    <ul class="navigation">
+      <li><a href="#" class="active" data-section="home">Home</a></li>
+      <li><a href="#" data-section="about">About Us</a></li>
+      <li><a href="#" data-section="menu">Menu</a></li>
+      <li><a href="#" data-section="gallery">Gallery</a></li>
+      <li><a href="#" data-section="reservation">Reservation</a></li>
+      <li><a href="#" data-section="location">Location</a></li>
+      <li><a href="#" data-section="blog">Blog</a></li>
+    </ul>
+  </nav>
+
+  <header id="home" class="section active">
+    <h1>Welcome to CURRY AND CULTURE</h1>
+    <p>Enjoy a curated menu, cozy atmosphere, and easy table booking. Your great meal is just a click away!</p>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>At ElegantEats, we bring together fresh flavors and friendly vibes. Our chefs blend passion with seasonal ingredients to offer a memorable meal every visit.</p>
+  </section>
+
+  <section id="menu" class="section">
+    <h2>Menu</h2>
+    <div class="menu-filters">
+      <button onclick="showMenu('all')">All</button>
+      <button onclick="showMenu('veg')">Vegetarian</button>
+      <button onclick="showMenu('nonveg')">Non-Vegetarian</button>
+      <button onclick="showMenu('special')">Specials</button>
+    </div>
+    <div id="menu-list" class="menu-list"></div>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="photo-grid">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Ambiance 1" />
+      <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80" alt="Ambiance 2" />
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80" alt="Ambiance 3" />
+    </div>
+  </section>
+
+  <section id="reservation" class="section">
+    <h2>Book a Table</h2>
+    <form class="reservation-form" id="resForm">
+      <input name="name" type="text" placeholder="Your Name" required />
+      <input name="email" type="email" placeholder="Email" required />
+      <input name="date" type="date" required />
+      <input name="time" type="time" required />
+      <input name="people" type="number" min="1" max="20" placeholder="No. of People" required />
+      <button type="submit">Book Table</button>
+    </form>
+    <div id="reserve-msg"></div>
+  </section>
+
+  <section id="location" class="section">
+    <h2>Find Us</h2>
+    <iframe class="mapview"
+      src="https://maps.google.com/maps?q=central%20park%20new%20york&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      allowfullscreen loading="lazy"></iframe>
+    <p style="text-align:center;">123 Culinary Avenue, Foodie City<br />Open 11:00AM - 11:00PM daily</p>
+  </section>
+
+  <section id="blog" class="section">
+    <h2>Blog</h2>
+    <p>Stay tuned for our food stories and chef specials right here. New posts every week.</p>
+  </section>
+
+  <footer class="footer">
+    <div>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div> @ 2025 ElegantEats. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
